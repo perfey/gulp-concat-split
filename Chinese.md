@@ -40,7 +40,7 @@ gulp.task('css', function() {
 
 > 连接合并文件内容的字符串，也是区分文件的字符串，合并和区分的值必须一致，已有默认值，建议不要修改
 
-- Default: `/\*\*\*\*\*\_gulp-concat-split\_\*\*\*\*\*/`
+- Default: `/*****_gulp-concat-split_*****/`
 - Type: `string`
 - Required: `false`
 
