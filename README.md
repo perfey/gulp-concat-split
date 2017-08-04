@@ -42,7 +42,7 @@ gulp.task('css', function() {
 
 > Differentiate string. Files concat together with differentiate string. Files split by differentiate string. Concat option and split option must be as same.
 
-- Default: '/*****_gulp-concat-split_*****/'
+- Default: /\*\*\*\*\*\_gulp-concat-split\_\*\*\*\*\*/
 - Type: string
 - Required: `false`
 
