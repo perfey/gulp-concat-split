@@ -1,12 +1,10 @@
 # gulp-concat-split
 
-[Chinese readme](./Chinese.md)
-
-### Install
+### 安装
 
     $ npm install --save-dev gulp-concat-split
 
-### Usage
+### 使用
 
 ```js
 const gulp = require('gulp');
@@ -36,11 +34,11 @@ gulp.task('css', function() {
 });
 ```
 
-### Options
+### 参数说明
 
 ###### splitStr
 
-> Differentiate string. Files concat together with differentiate string. Files split by differentiate string. Concat option and split option must be as same.
+> 连接合并文件内容的字符串，也是区分文件的字符串，合并和区分的值必须一致，已有默认值，建议不要修改
 
 - Default: '/*****_gulp-concat-split_*****/'
 - Type: string
@@ -48,15 +46,15 @@ gulp.task('css', function() {
 
 ###### name
 
-> Files concat name.
+> 合并后的文件名
 
 - Default: 'gulp-concat-split-tmp'
 - Type: string
 - Required: `false`
 
-### Why
+### 插件的使用场景
 
-Use under css
+如下css
 
 ```css
 // a.css
@@ -82,7 +80,7 @@ Use under css
 }
 ```
 
-Use under gulp
+使用postcss-sprites合并雪碧图时
 
 ```js
 gulp.task('dist', function (done) {
@@ -107,6 +105,6 @@ gulp.task('dist', function (done) {
 });
 ```
 
-The sprite img would only have icon2, icon3, icon4. We want to have icon1, icon2, icon3, icon4.  
+雪碧图包含图片 icon2, icon3, icon4. 预期是包含 icon1, icon2, icon3, icon4. 这是由于gulp会一个文件一个文件的丢给postcss-sprites实现合并雪碧图，后合并的会把先前的图片覆盖掉。  
 
-this problem will be resolved by `gulp-concat-split`.
+`gulp-concat-split`的提供就是为了解决这个问题。
