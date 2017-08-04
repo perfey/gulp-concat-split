@@ -40,16 +40,16 @@ gulp.task('css', function() {
 
 > 连接合并文件内容的字符串，也是区分文件的字符串，合并和区分的值必须一致，已有默认值，建议不要修改
 
-- Default: /\*\*\*\*\*\_gulp-concat-split\_\*\*\*\*\*/
-- Type: string
+- Default: `/\*\*\*\*\*\_gulp-concat-split\_\*\*\*\*\*/`
+- Type: `string`
 - Required: `false`
 
 ###### name
 
 > 合并后的文件名
 
-- Default: 'gulp-concat-split-tmp'
-- Type: string
+- Default: `gulp-concat-split-tmp`
+- Type: `string`
 - Required: `false`
 
 ### 插件的使用场景
