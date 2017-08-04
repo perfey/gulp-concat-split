@@ -1,0 +1,24 @@
+{
+  "name": "gulp-concat-split",
+  "version": "0.0.1",
+  "description": "gulp plugin concat split css file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perfey/gulp-concat-split.git"
+  },
+  "author": "perfey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/perfey/gulp-concat-split/issues"
+  },
+  "homepage": "https://github.com/perfey/gulp-concat-split#readme",
+  "dependencies": {
+    "gulp-util": "^3.0.8",
+    "through2": "^2.0.3",
+    "vinyl": "^2.1.0"
+  }
+}
